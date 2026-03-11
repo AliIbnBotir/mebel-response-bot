@@ -1,0 +1,26 @@
+[
+  {
+    "keywords": ["narx", "price", "qancha", "стоимость", "нарх"],
+    "reply": "Narxlar mahsulot turiga qarab farq qiladi.\nBatafsil ma'lumot uchun: @manager_username yoki +998901234567"
+  },
+  {
+    "keywords": ["yetkazib", "доставка", "delivery", "привезут"],
+    "reply": "Yetkazib berish xizmati mavjud!\nShahar ichida: 1-2 kun\nViloyatlarga: 3-5 kun"
+  },
+  {
+    "keywords": ["ish vaqt", "работаете", "soat", "hours", "schedule"],
+    "reply": "Biz har kuni 09:00 - 20:00 gacha ishlaymiz."
+  },
+  {
+    "keywords": ["manzil", "адрес", "address", "qayerda", "где"],
+    "reply": "Bizning manzilimiz:\nToshkent, Chilonzor tumani, Bunyodkor ko'chasi 12"
+  },
+  {
+    "keywords": ["garantiya", "гарантия", "warranty", "kafolat"],
+    "reply": "Barcha mahsulotlarimizga 1 yillik kafolat beriladi."
+  },
+  {
+    "keywords": ["chegirma", "скидка", "discount", "aksiya"],
+    "reply": "Hozirda 10% chegirma aksiyamiz bor!\nBatafsil: @manager_username"
+  }
+]
