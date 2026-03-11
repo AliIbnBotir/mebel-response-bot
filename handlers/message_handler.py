@@ -1,8 +1,12 @@
+import logging
+
 from telegram import Update
 from telegram.ext import ContextTypes
 
 from config import ADMIN_IDS
 from handlers.keyword_rules import get_reply
+
+logger = logging.getLogger(__name__)
 
 NO_MATCH_TEXT = (
     "Kechirasiz, bu savol bo'yicha ma'lumot topilmadi.\n"
@@ -17,6 +21,11 @@ async def handle_reply_to_admin(update: Update, context: ContextTypes.DEFAULT_TY
         return
 
     replied_to = message.reply_to_message.from_user
+    logger.info("Reply received | from_user=%s | replied_to=%s | ADMIN_IDS=%s",
+                message.from_user.id if message.from_user else None,
+                replied_to.id if replied_to else None,
+                ADMIN_IDS)
+
     if not replied_to or replied_to.id not in ADMIN_IDS:
         return
 
